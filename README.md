@@ -60,5 +60,4 @@ volta pin pnpm@latest
 
 ### 安装使用 commitlint
 
-
-
+参考 [commitlint](https://juejin.cn/post/7265455444037533755)
