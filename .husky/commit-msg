@@ -1,1 +1,4 @@
-npx --no-install commitlint -e "$HUSKY_GIT_PARAMS"
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+pnpm exec commitlint -e "$HUSKY_GIT_PARAMS"
