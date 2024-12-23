@@ -8,6 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint  --config eslint.config.js",
     "style": "stylelint \"src/**/*.(scss|css)\" --fix",
+    "commit": "git add . && git-cz",
     "preview": "vite preview",
     "prepare": "husky install"
   },
@@ -26,6 +27,8 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.13.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
@@ -44,5 +47,10 @@
   "volta": {
     "node": "23.3.0",
     "pnpm": "9.14.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
